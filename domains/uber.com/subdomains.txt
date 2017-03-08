@@ -99,6 +99,8 @@ horizon.uber.com
 vpn.uber.com
 video.uber.com
 nycvideo.uber.com
+info.uber.com
+careersinfo.uber.com
 go.uber.com
 to.uber.com
 photo.uber.com
@@ -123,6 +125,7 @@ jobs.uber.com
 engdocs.uber.com
 devbuilds.uber.com
 frontends.uber.com
+businesses.uber.com
 genghis.uber.com
 tools.uber.com
 sms.uber.com

@@ -14,9 +14,13 @@ if __name__ == "__main__":
 					  help="comma separated string of subdomain(s)", metavar="DOMAINS")
 	parser.add_option("-v", action='store_true', dest="verbose",
 					  help='Adds some verbosity when running.')
+	#parser.add_option("-d", "--debug", action="store", dest = "debug", help="adds more verbose output.")
 
 	(options, args) = parser.parse_args()
-	verbose = options.verbose
+	if options.verbose:
+		verbose = True
+	else:
+		verbose = False
 	domain_list = []
 	if options.filename:
 		with open(options.filename, 'r') as inputFile:
@@ -40,16 +44,27 @@ if __name__ == "__main__":
 			print("Failed on " + domains)
 		pass
 cwd = os.getcwd()
+if verbose:
+	print("cwd:" + cwd)
 workerScript = cwd+"/worker.py"
+if verbose:
+	print("Worker script location" + workerScript)
 for domains in (os.listdir(str(os.getcwd()+"/domains/"))):
 
+
 	subdomainLists = str(cwd+"/domains/"+domains.strip())
+	if verbose:
+		print("subdomainLists:" + subdomainLists)
 	input = subdomainLists + "/subdomains.txt" 
 	output = subdomainLists + "/resolvedSubdomains.txt"
+	if verbose:
+		v = "t"
+	else:
+		v = "f"
 
-	cmd = ["python", workerScript, input,output]
-	
-	print (cmd)
+	cmd = ["python", workerScript, input,output,v, "2>/dev/null"]
+	if verbose:
+		print (cmd)
 	subprocess.Popen(cmd)
 
 		

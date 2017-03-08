@@ -35,6 +35,8 @@ if __name__ == "__main__":
 	(options, args) = parser.parse_args()
 	verbose = options.verbose
 	domain_list = []
+	if not options.filename and not options.domains:
+		parser.error("No domains specified. Use -h for help.")
 	if options.filename:
 		with open(options.filename, 'r') as inputFile:
 			if verbose:

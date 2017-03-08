@@ -1,5 +1,6 @@
 c1.skype.com
 level48.skype.com
+captainamerica.skype.com
 media.skype.com
 beta.skype.com
 ucwa.skype.com
@@ -23,6 +24,7 @@ b-cc-euwe-01.cc.skype.com
 c-cc-euwe-01.cc.skype.com
 a-cc-euno-01.cc.skype.com
 b-cc-euno-01.cc.skype.com
+c-cc-euno-01.cc.skype.com
 api2.cc.skype.com
 a-cc.cc.skype.com
 b-cc.cc.skype.com
@@ -31,6 +33,7 @@ static.skype.com
 prod.tpc.skype.com
 download.skype.com
 mobiledownload.skype.com
+register.greenid.skype.com
 ice.skype.com
 skypewebexperience.skype.com
 upgrade.skype.com
@@ -60,7 +63,9 @@ baymsg1030126.msg.skype.com
 baymsg1030127.msg.skype.com
 baymsg1030119.msg.skype.com
 sg2p-client-dc.msg.skype.com
+dm2p-client-dc.msg.skype.com
 bn3p-client-dc.msg.skype.com
+by3p-client-dc.msg.skype.com
 emea-server-ss.msg.skype.com
 apac-server-ss.msg.skype.com
 amer-server-ss.msg.skype.com
@@ -117,6 +122,7 @@ clientlogin.cdn.skype.com
 s4w.cdn.skype.com
 swx.cdn.skype.com
 latest-swx.cdn.skype.com
+rps.skypetoken.skype.com
 login.skype.com
 a.login.skype.com
 uic.login.skype.com
@@ -127,6 +133,7 @@ mion.skype.com
 education.skype.com
 collaboration.skype.com
 world.turn.skype.com
+eu.turn.skype.com
 go.skype.com
 footballpromo.skype.com
 www.footballpromo.skype.com
@@ -194,6 +201,7 @@ news.skype.com
 pnrws.skype.com
 heartbeat.skype.com
 meet.skype.com
+noam.meet.skype.com
 get.skype.com
 consumer.entitlement.skype.com
 fpt.skype.com
